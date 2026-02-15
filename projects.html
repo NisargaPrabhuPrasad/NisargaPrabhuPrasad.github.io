@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Nisarga V P</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#2563eb",
+                light: "#60a5fa",
+                dark: "#1d4ed8",
+              },
+              accent: "#f97316",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <div class="min-h-screen">
+      <header
+        class="sticky top-0 z-30 backdrop-blur bg-slate-950/75 border-b border-slate-800"
+      >
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between"
+        >
+          <a
+            href="index.html"
+            class="font-semibold tracking-tight text-slate-100 hover:text-primary-light"
+          >
+            Nisarga V P
+          </a>
+          <nav class="hidden sm:flex gap-6 text-sm text-slate-300">
+            <a href="index.html" class="hover:text-primary-light">Home</a>
+            <span class="text-primary-light font-semibold">Projects</span>
+            <a href="education.html" class="hover:text-primary-light"
+              >Education</a
+            >
+            <a href="certifications.html" class="hover:text-primary-light"
+              >Certifications</a
+            >
+            <a href="index.html#skills" class="hover:text-primary-light"
+              >Skills</a
+            >
+            <a href="index.html#contact" class="hover:text-primary-light"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+        <section class="space-y-4">
+          <h1
+            class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50"
+          >
+            Projects
+          </h1>
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+            Selected AI and healthcare-focused projects demonstrating my skills
+            in Generative AI, NLP, and full-stack development.
+          </p>
+        </section>
+
+        <section class="space-y-6">
+          <!-- TB Chatbot -->
+          <article
+            class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:p-6 shadow-lg shadow-slate-950/50"
+          >
+            <h2 class="text-lg font-semibold text-primary-light">
+              Tuberculosis Q&amp;A Chatbot
+            </h2>
+            <p class="mt-2 text-sm text-slate-300">
+              Developed an NLP-based chatbot that provides accurate information
+              on tuberculosis (TB) symptoms, prevention measures, and treatment
+              options, thereby promoting public health awareness.
+            </p>
+            <p class="mt-3 text-sm text-slate-200">
+              <span class="font-semibold text-slate-100">Impact:</span>
+              Improved healthcare engagement by 50% through automated,
+              user-friendly interactions.
+            </p>
+            <p class="mt-1 text-sm text-slate-200">
+              <span class="font-semibold text-slate-100">Technologies:</span>
+              Node.js, Express.js, Natural Language Processing, Python.
+            </p>
+          </article>
+
+          <!-- Healthcare Assistant -->
+          <article
+            class="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 sm:p-6 shadow-lg shadow-slate-950/50"
+          >
+            <h2 class="text-lg font-semibold text-primary-light">
+              Intelligent Healthcare Assistant
+            </h2>
+            <p class="mt-2 text-sm text-slate-300">
+              Designing a Generative AI-powered virtual assistant to enhance
+              patient engagement and optimize medical workflows. Integrates
+              Retrieval Augmented Generation (RAG) and large language model
+              fine-tuning to deliver personalized medical insights, handle
+              appointment scheduling, and perform symptom analysis.
+            </p>
+            <p class="mt-3 text-sm text-slate-200">
+              <span class="font-semibold text-slate-100">Impact:</span>
+              Targets higher patient interaction efficiency by automating
+              routine responses and reducing manual workload for medical staff.
+            </p>
+            <p class="mt-1 text-sm text-slate-200">
+              <span class="font-semibold text-slate-100">Technologies:</span>
+              Python, LangChain, Llama 3.1 8B, Ollama, MongoDB, Power BI.
+            </p>
+          </article>
+        </section>
+      </main>
+
+      <footer
+        class="border-t border-slate-800 py-4 text-center text-xs text-slate-500"
+      >
+        © <span id="year"></span> Nisarga V P. All rights reserved.
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+</html>
+

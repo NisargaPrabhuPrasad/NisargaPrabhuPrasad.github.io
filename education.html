@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Education | Nisarga V P</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#2563eb",
+                light: "#60a5fa",
+                dark: "#1d4ed8",
+              },
+              accent: "#f97316",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <div class="min-h-screen">
+      <!-- Header -->
+      <header
+        class="sticky top-0 z-30 backdrop-blur bg-slate-950/75 border-b border-slate-800"
+      >
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between"
+        >
+          <a
+            href="index.html"
+            class="font-semibold tracking-tight text-slate-100 hover:text-primary-light"
+          >
+            Nisarga V P
+          </a>
+          <nav class="hidden sm:flex gap-6 text-sm text-slate-300">
+            <a href="index.html" class="hover:text-primary-light">Home</a>
+            <a href="projects.html" class="hover:text-primary-light">Projects</a>
+            <span class="text-primary-light font-semibold">Education</span>
+            <a href="certifications.html" class="hover:text-primary-light"
+              >Certifications</a
+            >
+            <a href="index.html#skills" class="hover:text-primary-light"
+              >Skills</a
+            >
+            <a href="index.html#contact" class="hover:text-primary-light"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+        <section class="space-y-4">
+          <h1
+            class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50"
+          >
+            Education
+          </h1>
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+            Academic background highlighting consistent performance and a strong
+            foundation in Computer Science and Engineering.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <div class="space-y-4">
+            <!-- BTech -->
+            <div
+              class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5"
+            >
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
+                <div>
+                  <p class="text-sm font-semibold text-slate-100">
+                    BTech in Computer Science and Engineering
+                  </p>
+                  <p class="text-sm text-slate-300">
+                    Dayananda Sagar University &middot; 2022–2026 (present)
+                  </p>
+                </div>
+                <p class="text-sm font-medium text-primary-light">
+                  CGPA: 9.12 (till 7th semester)
+                </p>
+              </div>
+            </div>
+
+            <!-- 12th -->
+            <div
+              class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5"
+            >
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
+                <div>
+                  <p class="text-sm font-semibold text-slate-100">
+                    12th &ndash; Ascent PU College, State Board
+                  </p>
+                  <p class="text-sm text-slate-300">Year of completion: 2022</p>
+                </div>
+                <p class="text-sm font-medium text-primary-light">
+                  Percentage: 89.4%
+                </p>
+              </div>
+            </div>
+
+            <!-- 10th -->
+            <div
+              class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 sm:p-5"
+            >
+              <div
+                class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
+              >
+                <div>
+                  <p class="text-sm font-semibold text-slate-100">
+                    10th &ndash; Presidency School, State Board
+                  </p>
+                  <p class="text-sm text-slate-300">Year of completion: 2020</p>
+                </div>
+                <p class="text-sm font-medium text-primary-light">
+                  Percentage: 86.3%
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="border-t border-slate-800 py-4 text-center text-xs text-slate-500"
+      >
+        © <span id="year"></span> Nisarga V P. All rights reserved.
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+</html>
+

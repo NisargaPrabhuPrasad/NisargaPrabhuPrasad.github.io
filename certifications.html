@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Certifications | Nisarga V P</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#2563eb",
+                light: "#60a5fa",
+                dark: "#1d4ed8",
+              },
+              accent: "#f97316",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <div class="min-h-screen">
+      <header
+        class="sticky top-0 z-30 backdrop-blur bg-slate-950/75 border-b border-slate-800"
+      >
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between"
+        >
+          <a
+            href="index.html"
+            class="font-semibold tracking-tight text-slate-100 hover:text-primary-light"
+          >
+            Nisarga V P
+          </a>
+          <nav class="hidden sm:flex gap-6 text-sm text-slate-300">
+            <a href="index.html" class="hover:text-primary-light">Home</a>
+            <a href="projects.html" class="hover:text-primary-light">Projects</a>
+            <a href="education.html" class="hover:text-primary-light"
+              >Education</a
+            >
+            <span class="text-primary-light font-semibold"
+              >Certifications</span
+            >
+            <a href="index.html#skills" class="hover:text-primary-light"
+              >Skills</a
+            >
+            <a href="index.html#contact" class="hover:text-primary-light"
+              >Contact</a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+        <section class="space-y-4">
+          <h1
+            class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-50"
+          >
+            Certifications &amp; Achievements
+          </h1>
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl">
+            Courses, hackathons, and contests that showcase my continuous
+            learning and problem-solving mindset.
+          </p>
+        </section>
+
+        <section class="space-y-4">
+          <ul class="space-y-3 text-sm text-slate-200">
+            <li class="border-l-2 border-primary/70 pl-3">
+              <span class="font-semibold text-slate-100"
+                >Basics of Python</span
+              >
+              – Infosys Springboard.
+            </li>
+            <li class="border-l-2 border-primary/70 pl-3">
+              <span class="font-semibold text-slate-100"
+                >DevOps with Docker &amp; Implementing DevOps Using Docker</span
+              >
+              – Infosys Springboard.
+            </li>
+            <li class="border-l-2 border-primary/70 pl-3">
+              <span class="font-semibold text-slate-100"
+                >DSU DevHack 2024</span
+              >
+              – Participated in a national 36-hour hackathon at Dayananda Sagar
+              University. Engineered an IoT-based train sanitization solution to
+              strengthen hygiene and safety for commuters.
+            </li>
+            <li class="border-l-2 border-primary/70 pl-3">
+              <span class="font-semibold text-slate-100"
+                >Code Sprint 2</span
+              >
+              – Programming contest conducted by Google Developer Student Clubs
+              at Nitte Meenakshi Institute of Technology.
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer
+        class="border-t border-slate-800 py-4 text-center text-xs text-slate-500"
+      >
+        © <span id="year"></span> Nisarga V P. All rights reserved.
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    </script>
+  </body>
+</html>
+
